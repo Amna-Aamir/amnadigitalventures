@@ -1,7 +1,32 @@
 import React from 'react'
+import { useState } from 'react'
 import './Home.css'
 
 function Home() {
+  const [formStatus, setFormStatus] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    try {
+      const res = await fetch('http://localhost:3000/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (res.ok) {
+        setFormStatus('success');
+        form.reset();
+      } else {
+        setFormStatus('error');
+      }
+    } catch {
+      setFormStatus('error');
+    }
+  };
+
   return (
     <>
       {/* Header */}
@@ -173,7 +198,7 @@ function Home() {
               <p className="form-subtitle">
                 Fill out the form below, and we'll get back to you with a tailored strategy for your business.
               </p>
-              <form id="consultationForm" action="/send" method="POST">
+              <form id="consultationForm" onSubmit={handleSubmit}>
                 <div className="form-group">
                   <input type="text" id="name" name="name" placeholder=" " required />
                   <label htmlFor="name">Full Name</label>
@@ -217,6 +242,12 @@ function Home() {
                 <button type="submit" className="submit-btn">
                   Get Your <span className="highlight-free">Free</span> Consultation
                 </button>
+                {formStatus === 'success' && (
+                  <div style={{ color: 'lime', marginTop: 10 }}>Email sent successfully!</div>
+                )}
+                {formStatus === 'error' && (
+                  <div style={{ color: 'red', marginTop: 10 }}>Error sending email. Please try again.</div>
+                )}
               </form>
             </div>
           </section>
