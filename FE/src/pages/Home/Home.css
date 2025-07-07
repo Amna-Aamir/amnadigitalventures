@@ -791,33 +791,44 @@ footer p {
   .left-nav {
     flex-direction: column;
     gap: 10px;
+    width: 100%;
   }
 
   .logo img {
-    width: 120px;
+    width: 100px;
     height: auto;
   }
 
   .hero-content h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
-  .features, .choose-features, .about-columns, .contact-card {
-    flex-direction: column;
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .welcome-container,
+  .features,
+  .choose-features,
+  .about-columns,
+  .contact-card {
+    flex-direction: column !important;
     gap: 16px;
+    align-items: stretch;
   }
 
-  .feature-box, .choose-box, .about-column, .contact-item {
-    width: 100%;
-    min-width: unset;
+  .feature-box,
+  .choose-box,
+  .about-column,
+  .contact-item {
+    width: 100% !important;
+    min-width: unset !important;
   }
 
-  .form-container {
-    padding: 10px;
-  }
-
+  .form-container,
   .consultation-form {
-    width: 100%;
-    min-width: unset;
+    width: 100% !important;
+    min-width: unset !important;
+    padding: 10px;
   }
 }
