@@ -777,3 +777,47 @@ footer p {
     filter: blur(1px);
   }
 }
+/* Mobile Styles */
+@media (max-width: 768px) {
+  header, .hero, .welcome, .choose-us, .services, .case-study, .about-section, .contact-section, footer {
+    padding: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .left-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo img {
+    width: 120px;
+    height: auto;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .features, .choose-features, .about-columns, .contact-card {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .feature-box, .choose-box, .about-column, .contact-item {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .form-container {
+    padding: 10px;
+  }
+
+  .consultation-form {
+    width: 100%;
+    min-width: unset;
+  }
+}
