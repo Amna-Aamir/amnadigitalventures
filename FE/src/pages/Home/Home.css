@@ -45,7 +45,6 @@ header {
   max-width: 160px;
   object-fit: contain;
   padding: 2px 0;
-  /* Remove any forced width on mobile */
 }
 @media (max-width: 480px) {
   .logo img {
@@ -54,7 +53,6 @@ header {
     width: auto;
   }
 }
-
 
 .logo-text {
   font-size: 1.5rem;
@@ -109,35 +107,48 @@ section {
   opacity: 0.9;
 }
 
+/* HERO & WELCOME BUTTONS: Match .submit-btn style */
 .hero-content .btn,
-.hero-content .get-free-consultation-btn {
-  display: inline-block;
-  background: #ffff00;
-  color: #000;
-  font-weight: 700;
+.hero-content .get-free-consultation-btn,
+.welcome-content .btn,
+.welcome-content .schedule-strategy-call-btn {
+  width: auto;
+  min-width: 300px;
+  display: block;
+  margin: 20px auto 0;
+  padding: 15px 30px;
+  background-color: #29C5F6;
+  color: white;
   border: none;
   border-radius: 4px;
-  padding: 14px 28px;
   font-size: 1.1rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s;
-  margin-top: 1rem;
+  transition: all 0.3s ease;
 }
 
 .hero-content .btn:hover,
-.hero-content .get-free-consultation-btn:hover {
-  background: #ffe600;
-  color: #222;
+.hero-content .get-free-consultation-btn:hover,
+.welcome-content .btn:hover,
+.welcome-content .schedule-strategy-call-btn:hover {
+  background-color: #1279a9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(41, 197, 246, 0.3);
 }
 
 @media (max-width: 480px) {
   .hero-content .btn,
-  .hero-content .get-free-consultation-btn {
+  .hero-content .get-free-consultation-btn,
+  .welcome-content .btn,
+  .welcome-content .schedule-strategy-call-btn {
+    min-width: 0;
     width: 100%;
     font-size: 1rem;
-    padding: 12px 0;
+    padding: 12px 10px;
+    margin: 20px 0 0 0;
   }
 }
+
 /* Welcome Section */
 .welcome-container {
   display: flex;
@@ -181,35 +192,6 @@ section {
 
 .highlight-company {
   color: #29C5F6;
-}
-.welcome-content .btn,
-.welcome-content .schedule-strategy-call-btn {
-  display: inline-block;
-  background: #ffff00;
-  color: #000;
-  font-weight: 700;
-  border: none;
-  border-radius: 4px;
-  padding: 14px 28px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
-  margin-top: 1rem;
-}
-
-.welcome-content .btn:hover,
-.welcome-content .schedule-strategy-call-btn:hover {
-  background: #ffe600;
-  color: #222;
-}
-
-@media (max-width: 480px) {
-  .welcome-content .btn,
-  .welcome-content .schedule-strategy-call-btn {
-    width: 100%;
-    font-size: 1rem;
-    padding: 12px 0;
-  }
 }
 
 /* Choose Us Section */
@@ -566,6 +548,7 @@ section {
   left: 0;
 }
 
+/* Main submit button style */
 .submit-btn {
   width: auto;
   min-width: 300px;
@@ -818,7 +801,11 @@ footer p {
   .consultation-form {
     padding: 5px;
   }
-  .submit-btn {
+  .submit-btn,
+  .hero-content .btn,
+  .hero-content .get-free-consultation-btn,
+  .welcome-content .btn,
+  .welcome-content .schedule-strategy-call-btn {
     min-width: 0;
     width: 100%;
     font-size: 1rem;

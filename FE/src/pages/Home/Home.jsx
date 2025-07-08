@@ -227,7 +227,7 @@ function Home() {
                 <div className="form-group">
                   <input type="text" id="business_type" name="business_type" placeholder=" " required />
                   <label htmlFor="business_type">Type of Business</label>
-                  <small>e.g. E-commerce, Restaurant, Real Estate, Beauty Salon, Tech Startup</small>
+                  <small>e.g. E-commerce, Restaurant, Real Estate</small>
                 </div>
                 <div className="form-group">
                   <input type="text" id="website" name="website" placeholder=" " />
