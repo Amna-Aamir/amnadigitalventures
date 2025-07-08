@@ -832,3 +832,45 @@ footer p {
     padding: 10px;
   }
 }
+.welcome-container,
+.about-card,
+.form-container,
+.case-study,
+.contact-card {
+  width: 100%;
+}
+
+/* 2. Make all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 3. Prevent horizontal scrolling */
+html, body {
+  overflow-x: hidden;
+}
+
+/* 4. Extra small device support */
+@media (max-width: 480px) {
+  .hero-content h1,
+  .welcome-heading,
+  .services h2,
+  .consultation-form h2 {
+    font-size: 1.2rem;
+  }
+  .form-container,
+  .consultation-form {
+    padding: 5px;
+  }
+  .submit-btn {
+    min-width: 0;
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px 10px;
+  }
+  .logo img {
+    width: 60px;
+  }
+}
