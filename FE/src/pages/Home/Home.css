@@ -170,7 +170,7 @@ section {
 }
 
 .highlight {
-  color: #ff6b35;
+  color: #ffee00;
   font-weight: 700;
 }
 
@@ -299,50 +299,73 @@ section {
 }
 
 .feature-box {
-  background: #1a1a1a;
+  background: #29C5F6;
   padding: 2rem;
   border-radius: 10px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s;
   border: 1px solid #333;
 }
 
 .feature-box:hover {
-  transform: translateY(-5px);
-  border-color: #29C5F6;
+  transform: scale(1.04) translateY(-5px);
+  box-shadow: 0 8px 32px 0 rgba(41,197,246,0.15);
+  border-color: #1279a9;
 }
 
 .feature-box h3 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: #29C5F6;
+  color: #111;
+  font-weight: 700;
 }
 
 .feature-box p {
-  color: #ccc;
+  color: #111;
+  font-weight: 500;
+}
+
+/* Highlighted text inside feature-box should be black */
+.feature-box .highlight,
+.feature-box .highlight-company {
+  color: #111 !important;
+}
+
+/* Highlight the word 'free' in yellow everywhere */
+.highlight-free,
+span.highlight-free,
+.highlight-free-text {
+  color: #FFD600 !important;
+  font-weight: 700;
+}
+
+/* Utility: highlight the word 'free' in yellow if wrapped in span */
+span.free, .free {
+  color: #FFD600 !important;
+  font-weight: 700;
 }
 
 /* Case Study Section */
 .case-study {
   background: #0a0a0a;
-  padding: 80px 20px;
+  padding: 48px 10px;
 }
 
 .case-study h2 {
-  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
-  margin-bottom: 2rem;
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+  margin-bottom: 1.2rem;
   color: #29C5F6;
-  max-width: 800px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .case-study-video {
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
   position: relative;
   width: 100%;
   height: 0;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 50%; /* slightly less tall for big screens */
 }
 
 .case-study-video iframe {
@@ -637,6 +660,14 @@ footer {
     padding: 60px 20px;
     min-height: 50vh;
   }
+
+  .case-study {
+    padding: 40px 15px;
+  }
+  .case-study-video {
+    max-width: 100%;
+    padding-bottom: 56.25%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -689,6 +720,14 @@ footer {
 
   section {
     padding: 30px 10px;
+  }
+
+  .case-study {
+    padding: 30px 10px;
+  }
+  .case-study-video {
+    max-width: 100%;
+    padding-bottom: 56.25%;
   }
 } 
 
