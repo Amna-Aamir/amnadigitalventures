@@ -119,19 +119,377 @@ function Home() {
           </div>
         </div>
       </section>
+{/* Our Work Section */}
+<section style={{
+  padding: '60px 20px',
+  background: '#000',
+  textAlign: 'center'
+}}>
+  <h2 style={{
+    color: '#29C5F6',
+    fontSize: '2rem',
+    marginBottom: '8px'
+  }}>
+    Our Work — Real Client Results
+  </h2>
+  <p style={{
+    color: '#aaa',
+    fontSize: '1rem',
+    marginBottom: '40px'
+  }}>
+    From zero to a complete digital brand
+  </p>
 
-      {/* Case Study Section */}
-      <section className="case-study">
-        <h2>How a Skincare Brand Used Digital Marketing to Grow Sales</h2>
-        <div className="case-study-video">
-          <iframe
-            src="https://www.youtube.com/embed/VMgF5WfdsYw"
-            title="Case Study Video"
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
+  <div style={{
+    display: 'flex',
+    flexDirection: window.innerWidth < 768 ? 'column' : 'row',
+    gap: '30px',
+    background: '#111',
+    border: '1px solid #29C5F6',
+    borderRadius: '16px',
+    padding: '30px',
+    maxWidth: '960px',
+    margin: '0 auto',
+    textAlign: 'left'
+  }}>
+
+    {/* Images Column */}
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '10px',
+      minWidth: '200px',
+      width: '200px'
+    }}>
+      <img
+        src="/src/assets/hgu-logo.png"
+        alt="HGU Organics Logo"
+        style={{
+          width: '100%',
+          height: '110px',
+          objectFit: 'contain',
+          background: '#1a1a1a',
+          padding: '10px',
+          borderRadius: '10px'
+        }}
+      />
+      <img
+        src="/src/assets/hgu-ad.png"
+        alt="HGU Ad Creative"
+        style={{
+          width: '100%',
+          height: '120px',
+          objectFit: 'cover',
+          borderRadius: '10px'
+        }}
+      />
+      <img
+        src="/src/assets/hgu-post.png"
+        alt="HGU Social Post"
+        style={{
+          width: '100%',
+          height: '120px',
+          objectFit: 'cover',
+          borderRadius: '10px'
+        }}
+      />
+    </div>
+
+    {/* Info Column */}
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '14px',
+      flex: 1
+    }}>
+
+      {/* Header */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+        <h3 style={{ color: '#29C5F6', fontSize: '1.4rem', margin: 0 }}>
+          HGU Organics
+        </h3>
+        <span style={{
+          border: '1px solid #29C5F6',
+          color: '#29C5F6',
+          padding: '3px 12px',
+          borderRadius: '20px',
+          fontSize: '0.78rem'
+        }}>
+          Natural Skincare · Pakistan
+        </span>
+      </div>
+
+      {/* Description */}
+      <p style={{ color: '#ccc', lineHeight: '1.7', fontSize: '0.92rem', margin: 0 }}>
+        Built a complete brand from scratch — brand identity, logo design, color palette, 
+        packaging design, social media setup on Instagram & Facebook, full website 
+        development with SEO, content creation, ad creatives, and Meta Ads strategy.
+      </p>
+
+      {/* Color Palette */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+        <span style={{ color: '#888', fontSize: '0.82rem' }}>Brand Color Palette</span>
+        <div style={{ display: 'flex', gap: '8px' }}>
+          {['#64242F', '#B44446', '#FC8F8F', '#DFD9D8'].map(color => (
+            <div key={color} style={{
+              width: '26px',
+              height: '26px',
+              borderRadius: '50%',
+              background: color,
+              border: '2px solid #333'
+            }} />
+          ))}
         </div>
-      </section>
+      </div>
+
+      {/* Service Tags */}
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+        {['Branding', 'Logo Design', 'Website', 'SEO', 'Social Media', 'Meta Ads', 'Content Creation', 'Packaging Design'].map(tag => (
+          <span key={tag} style={{
+            background: '#1a1a1a',
+            border: '1px solid #444',
+            color: '#fff',
+            padding: '4px 12px',
+            borderRadius: '20px',
+            fontSize: '0.78rem'
+          }}>
+            {tag}
+          </span>
+        ))}
+      </div>
+
+      {/* Buttons */}
+      <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginTop: '6px' }}>
+        <a
+          href="https://hgu-organics.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+          style={{
+            background: '#29C5F6',
+            color: '#000',
+            padding: '10px 22px',
+            borderRadius: '8px',
+            textDecoration: 'none',
+            fontWeight: '700',
+            fontSize: '0.88rem'
+          }}
+        >
+          View Website
+        </a>
+        <a
+          href="https://www.instagram.com/hgu_organics/"
+          target="_blank"
+          rel="noreferrer"
+          style={{
+            background: 'transparent',
+            color: '#29C5F6',
+            padding: '10px 22px',
+            borderRadius: '8px',
+            textDecoration: 'none',
+            fontWeight: '700',
+            fontSize: '0.88rem',
+            border: '2px solid #29C5F6'
+          }}
+        >
+          View Instagram
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{/* Our Work Section */}
+<section style={{
+  padding: '60px 20px',
+  background: '#000',
+  textAlign: 'center'
+}}>
+  <h2 style={{
+    color: '#29C5F6',
+    fontSize: '2rem',
+    marginBottom: '8px'
+  }}>
+    Our Work — Real Client Results
+  </h2>
+  <p style={{
+    color: '#aaa',
+    fontSize: '1rem',
+    marginBottom: '40px'
+  }}>
+    From zero to a complete digital brand
+  </p>
+
+  <div style={{
+    display: 'flex',
+    flexDirection: window.innerWidth < 768 ? 'column' : 'row',
+    gap: '30px',
+    background: '#111',
+    border: '1px solid #29C5F6',
+    borderRadius: '16px',
+    padding: '30px',
+    maxWidth: '960px',
+    margin: '0 auto',
+    textAlign: 'left'
+  }}>
+
+    {/* Images Column */}
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '10px',
+      minWidth: '200px',
+      width: '200px'
+    }}>
+      <img
+        src="/src/assets/hgu-logo.png"
+        alt="HGU Organics Logo"
+        style={{
+          width: '100%',
+          height: '110px',
+          objectFit: 'contain',
+          background: '#1a1a1a',
+          padding: '10px',
+          borderRadius: '10px'
+        }}
+      />
+      <img
+        src="/src/assets/hgu-ad.png"
+        alt="HGU Ad Creative"
+        style={{
+          width: '100%',
+          height: '120px',
+          objectFit: 'cover',
+          borderRadius: '10px'
+        }}
+      />
+      <img
+        src="/src/assets/hgu-post.png"
+        alt="HGU Social Post"
+        style={{
+          width: '100%',
+          height: '120px',
+          objectFit: 'cover',
+          borderRadius: '10px'
+        }}
+      />
+    </div>
+
+    {/* Info Column */}
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '14px',
+      flex: 1
+    }}>
+
+      {/* Header */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+        <h3 style={{ color: '#29C5F6', fontSize: '1.4rem', margin: 0 }}>
+          HGU Organics
+        </h3>
+        <span style={{
+          border: '1px solid #29C5F6',
+          color: '#29C5F6',
+          padding: '3px 12px',
+          borderRadius: '20px',
+          fontSize: '0.78rem'
+        }}>
+          Natural Skincare · Pakistan
+        </span>
+      </div>
+
+      {/* Description */}
+      <p style={{ color: '#ccc', lineHeight: '1.7', fontSize: '0.92rem', margin: 0 }}>
+        Built a complete brand from scratch — brand identity, logo design, color palette, 
+        packaging design, social media setup on Instagram & Facebook, full website 
+        development with SEO, content creation, ad creatives, and Meta Ads strategy.
+      </p>
+
+      {/* Color Palette */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+        <span style={{ color: '#888', fontSize: '0.82rem' }}>Brand Color Palette</span>
+        <div style={{ display: 'flex', gap: '8px' }}>
+          {['#64242F', '#B44446', '#FC8F8F', '#DFD9D8'].map(color => (
+            <div key={color} style={{
+              width: '26px',
+              height: '26px',
+              borderRadius: '50%',
+              background: color,
+              border: '2px solid #333'
+            }} />
+          ))}
+        </div>
+      </div>
+
+      {/* Service Tags */}
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+        {['Branding', 'Logo Design', 'Website', 'SEO', 'Social Media', 'Meta Ads', 'Content Creation', 'Packaging Design'].map(tag => (
+          <span key={tag} style={{
+            background: '#1a1a1a',
+            border: '1px solid #444',
+            color: '#fff',
+            padding: '4px 12px',
+            borderRadius: '20px',
+            fontSize: '0.78rem'
+          }}>
+            {tag}
+          </span>
+        ))}
+      </div>
+
+      {/* Buttons */}
+      <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginTop: '6px' }}>
+        
+          href="https://hgu-organics.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+          style={{
+            background: '#29C5F6',
+            color: '#000',
+            padding: '10px 22px',
+            borderRadius: '8px',
+            textDecoration: 'none',
+            fontWeight: '700',
+            fontSize: '0.88rem'
+          }}
+        >
+          View Website
+        </a>
+        
+          href="https://www.instagram.com/hgu_organics/"
+          target="_blank"
+          rel="noreferrer"
+          style={{
+            background: 'transparent',
+            color: '#29C5F6',
+            padding: '10px 22px',
+            borderRadius: '8px',
+            textDecoration: 'none',
+            fontWeight: '700',
+            fontSize: '0.88rem',
+            border: '2px solid #29C5F6'
+          }}
+        >
+          View Instagram
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+```
+
+---
+
+## 💻 STEP 3 — Make It Live
+
+Open the terminal in VS Code (the black bar at the bottom). Type these one by one:
+```
+cd E:\Development\react-learning
+git add .
+git commit -m "Add HGU Organics portfolio section"
+git push
 
       {/* About Us Section */}
       <section className="about-section" id="about">
