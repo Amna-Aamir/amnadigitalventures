@@ -440,7 +440,7 @@ function Home() {
 
       {/* Buttons */}
       <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginTop: '6px' }}>
-        
+        <a
           href="https://hgu-organics.vercel.app/"
           target="_blank"
           rel="noreferrer"
@@ -456,7 +456,7 @@ function Home() {
         >
           View Website
         </a>
-        
+        <a
           href="https://www.instagram.com/hgu_organics/"
           target="_blank"
           rel="noreferrer"
@@ -478,7 +478,6 @@ function Home() {
     </div>
   </div>
 </section>
-```
 
 ---
 
