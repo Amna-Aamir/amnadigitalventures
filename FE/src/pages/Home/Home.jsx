@@ -1,9 +1,10 @@
+
 import React from 'react'
 import { useState } from 'react'
 import './Home.css'
-import hguLogo from '../assets/hgu-logo.png';
-import hguAd from '../assets/hgu-ad.png';
-import hguPost from '../assets/hgu-post.png';
+import hguLogo from '../../assets/hgu-logo.png';
+import hguAd from '../../assets/hgu-ad.png';
+import hguPost from '../../assets/hgu-post.png';
 
 function Home() {
   const [formStatus, setFormStatus] = useState(null);
