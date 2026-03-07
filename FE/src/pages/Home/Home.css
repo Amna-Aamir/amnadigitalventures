@@ -730,7 +730,33 @@ footer {
     padding-bottom: 56.25%;
   }
 } 
-
+.work-section { padding: 60px 20px; background: #000; text-align: center; }
+.work-section h2 { color: #29C5F6; font-size: 2rem; margin-bottom: 8px; }
+.work-subtitle { color: #aaa; font-size: 1rem; margin-bottom: 40px; }
+.client-card { display: flex; flex-direction: row; gap: 30px; background: #111; border: 1px solid #29C5F6; border-radius: 16px; padding: 30px; max-width: 960px; margin: 0 auto; text-align: left; }
+.client-images { display: flex; flex-direction: column; gap: 10px; min-width: 180px; width: 180px; }
+.client-images img { width: 100%; border-radius: 10px; object-fit: cover; height: 120px; }
+.client-images .logo-img { object-fit: contain; background: #1a1a1a; padding: 10px; height: 110px; }
+.client-info { display: flex; flex-direction: column; gap: 14px; flex: 1; min-width: 0; }
+.client-header { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.client-header h3 { color: #29C5F6; font-size: 1.4rem; margin: 0; }
+.industry-tag { border: 1px solid #29C5F6; color: #29C5F6; padding: 3px 12px; border-radius: 20px; font-size: 0.78rem; }
+.client-desc { color: #ccc; line-height: 1.7; font-size: 0.92rem; margin: 0; }
+.palette-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.palette-label { color: #888; font-size: 0.82rem; }
+.swatches { display: flex; gap: 8px; }
+.swatch { width: 26px; height: 26px; border-radius: 50%; border: 2px solid #333; }
+.service-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.stag { background: #1a1a1a; border: 1px solid #444; color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 0.78rem; }
+.client-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 6px; }
+.btn-primary { background: #29C5F6; color: #000 !important; padding: 10px 22px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 0.88rem; }
+.btn-outline { background: transparent; color: #29C5F6 !important; padding: 10px 22px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 0.88rem; border: 2px solid #29C5F6; }
+@media (max-width: 768px) {
+  .client-card { flex-direction: column; padding: 20px; }
+  .client-images { flex-direction: row; width: 100%; min-width: unset; }
+  .client-images img { flex: 1; height: 80px; }
+  .client-images .logo-img { height: 80px; }
+}
 /* hi. */
 
 /* Ensure no horizontal scroll */
@@ -744,4 +770,32 @@ footer {
     margin: 0;
     border-radius: 0;
   }
+}
+
+.work-section { padding: 60px 20px; background: #000; text-align: center; }
+.work-section h2 { color: #29C5F6; font-size: 2rem; margin-bottom: 8px; }
+.work-subtitle { color: #aaa; font-size: 1rem; margin-bottom: 40px; }
+.client-card { display: flex; flex-direction: row; gap: 30px; background: #111; border: 1px solid #29C5F6; border-radius: 16px; padding: 30px; max-width: 960px; margin: 0 auto; text-align: left; }
+.client-images { display: flex; flex-direction: column; gap: 10px; min-width: 180px; width: 180px; }
+.client-images img { width: 100%; border-radius: 10px; object-fit: cover; height: 120px; }
+.client-images .logo-img { object-fit: contain; background: #1a1a1a; padding: 10px; height: 110px; }
+.client-info { display: flex; flex-direction: column; gap: 14px; flex: 1; min-width: 0; }
+.client-header { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.client-header h3 { color: #29C5F6; font-size: 1.4rem; margin: 0; }
+.industry-tag { border: 1px solid #29C5F6; color: #29C5F6; padding: 3px 12px; border-radius: 20px; font-size: 0.78rem; }
+.client-desc { color: #ccc; line-height: 1.7; font-size: 0.92rem; margin: 0; }
+.palette-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.palette-label { color: #888; font-size: 0.82rem; }
+.swatches { display: flex; gap: 8px; }
+.swatch { width: 26px; height: 26px; border-radius: 50%; border: 2px solid #333; }
+.service-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.stag { background: #1a1a1a; border: 1px solid #444; color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 0.78rem; }
+.client-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 6px; }
+.btn-primary { background: #29C5F6; color: #000 !important; padding: 10px 22px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 0.88rem; }
+.btn-outline { background: transparent; color: #29C5F6 !important; padding: 10px 22px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 0.88rem; border: 2px solid #29C5F6; }
+@media (max-width: 768px) {
+  .client-card { flex-direction: column; padding: 20px; }
+  .client-images { flex-direction: row; width: 100%; min-width: unset; }
+  .client-images img { flex: 1; height: 80px; }
+  .client-images .logo-img { height: 80px; }
 }
