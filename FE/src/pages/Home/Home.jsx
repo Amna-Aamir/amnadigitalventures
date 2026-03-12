@@ -5,6 +5,37 @@ import './Home.css'
 import hguLogo from '../../assets/hgu-logo.png';
 import hguAd from '../../assets/hgu-ad.png';
 import hguPost from '../../assets/hgu-post.png';
+import websiteHgu from '../../assets/portfolio/website-hgu.gif';
+import websiteAdv from '../../assets/portfolio/website-adv.gif';
+import logoN2lab from '../../assets/portfolio/logo-n2lab.png';
+import logoLumiere from '../../assets/portfolio/logo-lumiere.png';
+import logoSnack from '../../assets/portfolio/logo-snackonight.png';
+import logoBrew from '../../assets/portfolio/logo-brewbliss.png';
+import logoBright from '../../assets/portfolio/logo-brightminds.png';
+import logoPoulse from '../../assets/portfolio/logo-poulsefit.png';
+import logoGreen from '../../assets/portfolio/logo-greensprout.png';
+import logoElora from '../../assets/portfolio/logo-eloracouture.png';
+import logoThinkit from '../../assets/portfolio/logo-thinkit.png';
+import logoNova from '../../assets/portfolio/logo-novasphere.png';
+import logoSastayi from '../../assets/portfolio/logo-sastayi.png';
+import logoHgu from '../../assets/portfolio/logo-hgu.png';
+import logoAdv from '../../assets/portfolio/logo-adv.png';
+import hguAd1 from '../../assets/portfolio/hgu-ad-1.png';
+import hguAd2 from '../../assets/portfolio/hgu-ad-2.png';
+import hguAd3 from '../../assets/portfolio/hgu-ad-3.png';
+import hguPost1 from '../../assets/portfolio/hgu-post-1.png';
+import hguPost2 from '../../assets/portfolio/hgu-post-2.png';
+import hguPost3 from '../../assets/portfolio/hgu-post-3.png';
+import hguPost4 from '../../assets/portfolio/hgu-post-4.png';
+import hguPost5 from '../../assets/portfolio/hgu-post-5.png';
+import hguPost6 from '../../assets/portfolio/hgu-post-6.png';
+import hguPost7 from '../../assets/portfolio/hgu-post-7.png';
+import hguPost8 from '../../assets/portfolio/hgu-post-8.png';
+import hguPost9 from '../../assets/portfolio/hgu-post-9.png';
+import hguPost10 from '../../assets/portfolio/hgu-post-10.png';
+import advPost1 from '../../assets/portfolio/adv-post-1.png';
+import advPost2 from '../../assets/portfolio/adv-post-2.png';
+import advPost3 from '../../assets/portfolio/adv-post-3.png';
 
 function Home() {
   const [formStatus, setFormStatus] = useState(null);
@@ -169,6 +200,56 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* Portfolio Section */}
+<section className="portfolio-section">
+  <h2 className="portfolio-heading">Our Portfolio</h2>
+  <p className="portfolio-subtitle">Websites, logos, and creations — all built by ADV</p>
+
+  {/* Websites Subsection */}
+  <div className="portfolio-subsection">
+    <h3 className="subsection-title">🌐 Websites Created</h3>
+    <div className="websites-grid">
+      <div className="website-card">
+        <img src={websiteHgu} alt="HGU Organics Website" />
+        <p>HGU Organics</p>
+      </div>
+      <div className="website-card">
+        <img src={websiteAdv} alt="ADV Website" />
+        <p>Amna Digital Ventures</p>
+      </div>
+    </div>
+  </div>
+
+  {/* Logos Subsection */}
+  <div className="portfolio-subsection">
+    <h3 className="subsection-title">✏️ Logos Designed</h3>
+    <div className="logos-track-wrapper">
+      <div className="logos-track">
+        {[logoN2lab, logoLumiere, logoSnack, logoBrew, logoBright, logoPoulse, logoGreen, logoElora, logoThinkit, logoNova, logoSastayi, logoHgu, logoAdv,
+          logoN2lab, logoLumiere, logoSnack, logoBrew, logoBright, logoPoulse, logoGreen, logoElora, logoThinkit, logoNova, logoSastayi, logoHgu, logoAdv
+        ].map((logo, i) => (
+          <div key={i} className="logo-slide">
+            <img src={logo} alt={`Logo ${i}`} />
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  {/* Creations Subsection */}
+  <div className="portfolio-subsection">
+    <h3 className="subsection-title">🎨 Content & Templates</h3>
+    <div className="creations-carousel">
+      {[hguAd1, hguAd2, hguAd3, hguPost1, hguPost2, hguPost3, hguPost4, hguPost5, hguPost6, hguPost7, hguPost8, hguPost9, hguPost10, advPost1, advPost2, advPost3].map((img, i) => (
+        <div key={i} className="creation-card">
+          <img src={img} alt={`Creation ${i + 1}`} />
+        </div>
+      ))}
+    </div>
+  </div>
+
+</section>
 
       {/* About Us Section */}
       <section className="about-section" id="about">
